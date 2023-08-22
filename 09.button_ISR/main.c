@@ -22,7 +22,7 @@ uint32_t volatile *pClkCtrlReg				= (uint32_t*) (0x40023800 + 0x30);
 uint32_t volatile *pClkCtrlRegApb2			= (uint32_t*) (0x40023800 + 0x44);
 uint32_t volatile *pGPIOAModeReg 			= (uint32_t*) (0x40020000 + 0x00);
 uint32_t volatile *pEXTIMaskReg 			= (uint32_t*) (0x40013C00 + 0x00);
-uint32_t volatile *pEXTTIEdgeCtrlReg		= (uint32_t*) (0x40013C00 + 0x08);
+uint32_t volatile *pEXTTIEdgeCtrlReg	        	= (uint32_t*) (0x40013C00 + 0x08);
 uint32_t volatile *pNVICIRQEnReg 			= (uint32_t*) 0xE000E100;
 
 
