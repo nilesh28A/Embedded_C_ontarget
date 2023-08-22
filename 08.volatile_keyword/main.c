@@ -13,6 +13,8 @@ int main(void)
 	uint8_t volatile data1;
 	uint8_t volatile data2;
 
+	// to tell the.... compiler don't do any optimization on this variable
+
 	data1 = 50;
 
 	data2 = data1;
