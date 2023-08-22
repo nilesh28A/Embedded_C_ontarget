@@ -33,14 +33,14 @@ int main(void)
 
 	//Configure PA0 & PA1 as input mode (GPIOA MODE REGISTER)
 
-	*pPortAModeReg &= ~(3<<0);
+	*pPortAModeReg &= ~(3<<0); //PA0
 
 	while(1)
 	{
 
 
 		//read the pin status of the pin PA1 (GPIOA INPUT DATA REGISTER)
-		uint8_t  pinStatus0 = (*pPortAInReg & 0x1); //zero out all other bits except bit 0
+		uint8_t  pinStatus0 = (*pPortAInReg & 0x1); // PA0 zero out all other bits except bit 0
 
 
 
@@ -57,6 +57,6 @@ int main(void)
 
 	}
 
-
+ //// not able to use PA1, PA2, PA3 as a input ...... ???? 
 
 }
