@@ -16,7 +16,7 @@ int main(void)
 	uint32_t  volatile *const pPortDOutReg =  (uint32_t*)0x40020C14;
 
 	uint32_t volatile *const pPortAModeReg =     (uint32_t*)0x40020000;
-	uint32_t const volatile *const pPortAInReg = (uint32_t*)0x40020010;
+	uint32_t const volatile *const pPortAInReg = (uint32_t*)0x40020010;  // programmer should not write (read only)
 
 
 	//enable the clock for GPOID , GPIOA peripherals in the AHB1ENR
